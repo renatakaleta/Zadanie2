@@ -9,15 +9,15 @@ public class ClothesPage {
     public ClothesPage(WebDriver driver) {PageFactory.initElements(driver,this);}
 
     @FindBy(id = "category-3")
-    WebElement ClothesBtn;
+    WebElement clothesBtn;
 
 
     @FindBy(css = "h2.h3.product-title")
-   WebElement ItemBtn;
+   WebElement itemBtn;
 
     public void goToSelectedItem() {
 
-        ClothesBtn.click();
-        ItemBtn.click();
+        clothesBtn.click();
+        itemBtn.click();
     }
 }

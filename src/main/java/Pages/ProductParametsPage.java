@@ -11,21 +11,21 @@ import org.openqa.selenium.support.ui.Select;
 public class ProductParametsPage {
     public ProductParametsPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
-        SizeSelector = new Select(driver.findElement(By.id("group_1")));
+        sizeSelector = new Select(driver.findElement(By.id("group_1")));
     }
 
     @FindBy(id = "group_1")
-    Select SizeSelector;
+    Select sizeSelector;
     @FindBy(id = "quantity_wanted")
-    WebElement QuantityInputBox;
+    WebElement quantityInputBox;
 
     @FindBy(css =".btn.btn-primary.add-to-cart")
-    WebElement AddToCartBtn;
+    WebElement addToCartBtn;
 
     public void choseProductParamets() {
-        SizeSelector.selectByValue("2");
-        QuantityInputBox.sendKeys(Keys.DELETE, "5");
-        AddToCartBtn.click();
+        sizeSelector.selectByValue("2");
+        quantityInputBox.sendKeys(Keys.DELETE, "5");
+        addToCartBtn.click();
 
 
     }

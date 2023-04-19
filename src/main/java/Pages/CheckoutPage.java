@@ -9,35 +9,35 @@ public class CheckoutPage {
     public CheckoutPage(WebDriver driver) {
         PageFactory.initElements(driver,this);}
     @FindBy(xpath = "/html/body/div[1]/div/div/div[2]/div/div[2]/div/div/a")
-    WebElement ProceesCheckoutBtn;
+    WebElement proceesCheckoutBtn;
 
     @FindBy(css = ".btn.btn-primary")
-    WebElement GoToCheckoutBtn;
+    WebElement goToCheckoutBtn;
 
     @FindBy(name = "confirm-addresses")
-    WebElement ConfirmAdressBtn;
+    WebElement confirmAdressBtn;
 
 
     @FindBy(name = "confirmDeliveryOption")
-    WebElement ConfirmDeliveryBtn;
+    WebElement confirmDeliveryBtn;
 
     @FindBy(id = "payment-option-1")
-    WebElement PayByCheckBtn;
+    WebElement payByCheckBtn;
 
     @FindBy(id = "conditions_to_approve[terms-and-conditions]")
-    WebElement AgreeBox;
+    WebElement agreeBox;
 
     @FindBy(css = "#payment-confirmation [type=submit]")
-    WebElement PlaceOrderBtn;
+    WebElement placeOrderBtn;
 
     public void CheckoutProcess(){
-        ProceesCheckoutBtn.click();
-        GoToCheckoutBtn.click();
-        ConfirmAdressBtn.click();
-        ConfirmDeliveryBtn.click();
-        PayByCheckBtn.click();
-        AgreeBox.click();
-        PlaceOrderBtn.click();
+        proceesCheckoutBtn.click();
+        goToCheckoutBtn.click();
+        confirmAdressBtn.click();
+        confirmDeliveryBtn.click();
+        payByCheckBtn.click();
+        agreeBox.click();
+        placeOrderBtn.click();
 
 
 
